@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Rope - Contacto</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body { font-family: Arial, sans-serif; color: #333; }
+
+        /* MENÚ */
+        .navbar { background-color: #2563eb; padding: 15px 0; }
+        .nav-container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 20px; }
+        .logo h2 { color: white; font-size: 28px; }
+        .nav-menu { display: flex; list-style: none; gap: 0; }
+        .nav-link { color: white; text-decoration: none; padding: 15px 25px; font-size: 16px; font-weight: bold; }
+        .nav-link:hover { background-color: rgba(255, 255, 255, 0.2); }
+        .nav-link.active { background-color: rgba(255, 255, 255, 0.3); }
+
+        /* HERO CONTACTO */
+        .contact-hero { background-image: url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?crop=entropy&cs=srgb&fm=jpg&q=85'); background-size: cover; background-position: center; min-height: 700px; }
+        .contact-overlay { background-color: rgba(37, 99, 235, 0.85); min-height: 700px; padding: 60px 20px; }
+        .contact-content { max-width: 1200px; margin: 0 auto; }
+
+        .contact-header { text-align: center; margin-bottom: 50px; color: white; }
+        .contact-title { font-size: 48px; margin-bottom: 15px; }
+        .contact-subtitle { font-size: 22px; color: #fbbf24; font-weight: bold; margin-bottom: 20px; }
+        .contact-intro { font-size: 17px; max-width: 700px; margin: 0 auto; line-height: 1.7; }
+
+        .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; }
+        .contact-card { background: white; padding: 30px 20px; border-radius: 10px; border-top: 4px solid #fbbf24; box-shadow: 0 6px 15px rgba(0,0,0,0.15); text-align: center; transition: transform 0.3s; }
+        .contact-card:hover { transform: translateY(-5px); }
+        .contact-icon { font-size: 42px; margin-bottom: 15px; }
+        .contact-card h3 { color: #2563eb; margin-bottom: 12px; font-size: 20px; }
+        .contact-card p, .contact-card address { color: #333; font-style: normal; line-height: 1.7; font-size: 16px; margin-bottom: 4px; }
+
+        /* PIE DE PÁGINA */
+        .footer { background-color: #1e293b; color: white; padding: 25px; text-align: center; }
+        .footer p { margin: 5px 0; }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .nav-container { flex-direction: column; }
+            .nav-menu { flex-direction: column; width: 100%; }
+            .nav-link { text-align: center; }
+            .contact-title { font-size: 32px; }
+            .contact-subtitle { font-size: 18px; }
+            .contact-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h2>Star Rope</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="Index.html" class="nav-link">INICIO</a></li>
+                <li><a href="NOSOTROS.html" class="nav-link">NOSOTROS</a></li>
+                <li><a href="PRODUCTOS.html" class="nav-link">PRODUCTOS</a></li>
+                <li><a href="CONTACTO.html" class="nav-link active">CONTACTO</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="contact-hero">
+        <div class="contact-overlay">
+            <div class="contact-content">
+                <div class="contact-header">
+                    <h1 class="contact-title">Contáctanos</h1>
+                    <p class="contact-subtitle">Estamos aquí para ayudarte</p>
+                    <p class="contact-intro">¿Tienes preguntas sobre nuestros productos o quieres hacer un pedido? Escríbenos, llámanos o visítanos. En Star Rope siempre estamos listos para atenderte.</p>
+                </div>
+
+                <section class="contact-grid">
+                    <article class="contact-card">
+                        <div class="contact-icon">📞</div>
+                        <h3>Teléfono</h3>
+                        <p>+57 321 2204425</p>
+                    </article>
+
+                    <article class="contact-card">
+                        <div class="contact-icon">📍</div>
+                        <h3>Dirección</h3>
+                        <address>
+                            Cra. 31A 25A-07<br>
+                            Bogotá, Distrito Capital 111321
+                        </address>
+                    </article>
+
+                    <article class="contact-card">
+                        <div class="contact-icon">✉️</div>
+                        <h3>Correo</h3>
+                        <p>contacto@starrope.com</p>
+                        <p>ventas@starrope.com</p>
+                    </article>
+
+                    <article class="contact-card">
+                        <div class="contact-icon">🕒</div>
+                        <h3>Horario</h3>
+                        <p>Lunes a Viernes: 8:00am - 6:00pm</p>
+                        <p>Sábados: 9:00am - 2:00pm</p>
+                    </article>
+                </section>
+            </div>
+        </div>
+    </header>
+
+    <footer class="footer">
+        <p>&copy; 2026 Star Rope - Proyecto de Informática</p>
+        <p>Ropa Deportiva | Comodidad, Rendimiento y Estilo</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Rope - Nosotros</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        /* MENÚ */
+        .navbar {
+            background-color: #2563eb;
+            padding: 15px 0;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo h2 {
+            color: white;
+            font-size: 28px;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 0;
+        }
+
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            padding: 15px 25px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .nav-link:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .nav-link.active {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        /* SECCIÓN PRINCIPAL */
+        .hero-section {
+            background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NDh8MHwxfHNlYXJjaHwzfHxidXNpbmVzcyUyMG1hbmFnZW1lbnR8ZW58MHx8fHwxNzgwMDkxODk0fDA&ixlib=rb-4.1.0&q=85');
+            background-size: cover;
+            background-position: center;
+            min-height: 600px;
+        }
+
+        .hero-overlay {
+            background-color: rgba(37, 99, 235, 0.85);
+            min-height: 600px;
+            padding: 60px 20px;
+        }
+
+        .hero-content {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .hero-title {
+            font-size: 48px;
+            color: white;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .hero-description {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .hero-description p {
+            font-size: 18px;
+            line-height: 1.7;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .mission-vision {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .mission-card, .vision-card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            border-left: 5px solid #fbbf24;
+        }
+
+        .mission-card h3, .vision-card h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #2563eb;
+        }
+
+        .mission-card p, .vision-card p {
+            font-size: 17px;
+            line-height: 1.7;
+            color: #333;
+        }
+
+        /* PIE DE PÁGINA */
+        .footer {
+            background-color: #1e293b;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .footer p {
+            margin: 5px 0;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+            }
+            
+            .nav-menu {
+                flex-direction: column;
+                width: 100%;
+            }
+            
+            .nav-link {
+                text-align: center;
+            }
+            
+            .hero-title {
+                font-size: 32px;
+            }
+
+            .mission-vision {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- MENÚ -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h2>Star Rope</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">INICIO</a></li>
+                <li><a href="NOSOTROS.html" class="nav-link active">NOSOTROS</a></li>
+                <li><a href="PRODUCTOS.html" class="nav-link">PRODUCTOS</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- SECCIÓN PRINCIPAL -->
+    <header class="hero-section">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1 class="hero-title">Sobre Star Rope</h1>
+                
+                <div class="hero-description">
+                    <p>
+                        <strong>Star Rope</strong> es una iniciativa juvenil orientada a satisfacer las necesidades 
+                        de personas que buscan productos de calidad, confort y estilo en el ámbito de la ropa deportiva. 
+                        Buscamos posicionarnos en el mercado local como una alternativa innovadora y sostenible.
+                    </p>
+                    <p>
+                        Nuestra marca surge por la observación de la creciente tendencia de estilos de vida saludables 
+                        y deportivos, y la demanda por prendas cómodas y personalizadas. Identificamos la falta de 
+                        marcas locales accesibles con diseños modernos y materiales de calidad.
+                    </p>
+                    <p>
+                        <strong>Valores Empresariales:</strong> Calidad, responsabilidad, innovación, trabajo en equipo, 
+                        servicio y pasión por el deporte. Nuestro compromiso ambiental utiliza materiales sostenibles 
+                        y ecológicos, alineados con el ODS 12: Producción y consumo responsable.
+                    </p>
+                </div>
+
+                <div class="mission-vision">
+                    <div class="mission-card">
+                        <h3>🎯 Nuestra Misión</h3>
+                        <p>
+                            Ofrecer ropa deportiva de calidad, cómoda y moderna, que promueva un estilo de vida 
+                            activo y saludable. Brindamos excelente servicio al cliente con precios accesibles, 
+                            combinando diseño atractivo, comodidad y materiales sostenibles para democratizar 
+                            la moda deportiva.
+                        </p>
+                    </div>
+
+                    <div class="vision-card">
+                        <h3>🔭 Nuestra Visión</h3>
+                        <p>
+                            Para 2030, ser la marca líder de ropa deportiva a nivel regional, reconocida por su 
+                            innovación, calidad y fomento del deporte. Expandirnos a otras ciudades, crear programas 
+                            sociales deportivos y ser referente en sostenibilidad y producción responsable.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer">
+        <p>&copy; 2026 Star Rope - Proyecto de Informática</p>
+        <p>Ropa Deportiva | Comodidad, Rendimiento y Estilo</p>
+    </footer>
+</body>
+</html>

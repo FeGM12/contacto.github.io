@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Rope - Productos</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        /* MENÚ */
+        .navbar {
+            background-color: #2563eb;
+            padding: 15px 0;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo h2 {
+            color: white;
+            font-size: 28px;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 0;
+        }
+
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            padding: 15px 25px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .nav-link:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .nav-link.active {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        /* SECCIÓN PRINCIPAL */
+        .hero-section {
+            background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NDh8MHwxfHNlYXJjaHwzfHxidXNpbmVzcyUyMG1hbmFnZW1lbnR8ZW58MHx8fHwxNzgwMDkxODk0fDA&ixlib=rb-4.1.0&q=85');
+            background-size: cover;
+            background-position: center;
+            min-height: 600px;
+        }
+
+        .hero-overlay {
+            background-color: rgba(37, 99, 235, 0.85);
+            min-height: 600px;
+            padding: 60px 20px;
+        }
+
+        .hero-content {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .hero-title {
+            font-size: 48px;
+            color: white;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .hero-subtitle {
+            font-size: 20px;
+            color: #fbbf24;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .service-card {
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            border-top: 4px solid #fbbf24;
+        }
+
+        .service-icon {
+            font-size: 40px;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .service-card h3 {
+            font-size: 22px;
+            color: #2563eb;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .service-card p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .service-features {
+            list-style: none;
+            padding: 0;
+        }
+
+        .service-features li {
+            padding: 8px 0;
+            color: #333;
+            font-size: 15px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .service-features li:before {
+            content: '✓';
+            color: #22c55e;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+
+        /* PIE DE PÁGINA */
+        .footer {
+            background-color: #1e293b;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .footer p {
+            margin: 5px 0;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+            }
+            
+            .nav-menu {
+                flex-direction: column;
+                width: 100%;
+            }
+            
+            .nav-link {
+                text-align: center;
+            }
+            
+            .hero-title {
+                font-size: 32px;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- MENÚ -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h2>Star Rope</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">INICIO</a></li>
+                <li><a href="NOSOTROS.html" class="nav-link">NOSOTROS</a></li>
+                <li><a href="PRODUCTOS.html" class="nav-link active">PRODUCTOS</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- SECCIÓN PRINCIPAL -->
+    <header class="hero-section">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1 class="hero-title">Nuestra Línea de Productos</h1>
+                <p class="hero-subtitle">Ropa deportiva con calidad, diseño y tecnología</p>
+                
+                <div class="services-grid">
+                    <!-- Producto 1 -->
+                    <div class="service-card">
+                        <div class="service-icon">👕</div>
+                        <h3>Ropa Deportiva Básica</h3>
+                        <p>
+                            Prendas cómodas y funcionales para entrenamientos diarios, gimnasio y 
+                            actividades deportivas. Diseños modernos con materiales de alta calidad.
+                        </p>
+                        <ul class="service-features">
+                            <li>Camisetas deportivas</li>
+                            <li>Pantalones y shorts</li>
+                            <li>Sudaderas y chaquetas</li>
+                            <li>Materiales transpirables</li>
+                        </ul>
+                    </div>
+
+                    <!-- Producto 2 -->
+                    <div class="service-card">
+                        <div class="service-icon">⚡</div>
+                        <h3>Línea de Alto Rendimiento</h3>
+                        <p>
+                            Prendas especializadas para deportistas con tecnologías innovadoras como 
+                            telas de secado rápido y compresión para mejorar el rendimiento.
+                        </p>
+                        <ul class="service-features">
+                            <li>Telas de secado rápido</li>
+                            <li>Tecnología de compresión</li>
+                            <li>Resistentes y duraderas</li>
+                            <li>Adaptadas a diferentes deportes</li>
+                        </ul>
+                    </div>
+
+                    <!-- Producto 3 -->
+                    <div class="service-card">
+                        <div class="service-icon">🌱</div>
+                        <h3>Línea Eco-Sostenible</h3>
+                        <p>
+                            Colección confeccionada con materiales sostenibles y ecológicos, telas 
+                            antifluido y diseños innovadores que cuidan el medio ambiente.
+                        </p>
+                        <ul class="service-features">
+                            <li>Materiales reciclados</li>
+                            <li>Telas ecológicas</li>
+                            <li>Telas antifluido</li>
+                            <li>Producción responsable</li>
+                        </ul>
+                    </div>
+
+                    <!-- Producto 4 -->
+                    <div class="service-card">
+                        <div class="service-icon">🎽</div>
+                        <h3>Ropa Casual Deportiva</h3>
+                        <p>
+                            Prendas que combinan estilo urbano con comodidad deportiva, perfectas 
+                            para el día a día fuera del gimnasio.
+                        </p>
+                        <ul class="service-features">
+                            <li>Diseños modernos y urbanos</li>
+                            <li>Comodidad todo el día</li>
+                            <li>Estilo versátil</li>
+                            <li>Precios accesibles</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer">
+        <p>&copy; 2026 Star Rope - Proyecto de Informática</p>
+        <p>Ropa Deportiva | Comodidad, Rendimiento y Estilo</p>
+    </footer>
+</body>
+</html>

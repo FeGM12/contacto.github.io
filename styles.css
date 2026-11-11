@@ -1,0 +1,229 @@
+
+/* ESTILOS GENERALES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* MENÚ */
+.navbar {
+    background-color: #2563eb;
+    padding: 15px 0;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo h2 {
+    color: white;
+    font-size: 28px;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 0;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.nav-link.active {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* SECCIÓN PRINCIPAL */
+.hero-section {
+    background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NDh8MHwxfHNlYXJjaHwzfHxidXNpbmVzcyUyMG1hbmFnZW1lbnR8ZW58MHx8fHwxNzgwMDkxODk0fDA&ixlib=rb-4.1.0&q=85');
+    background-size: cover;
+    background-position: center;
+    min-height: 600px;
+}
+
+.hero-overlay {
+    background-color: rgba(37, 99, 235, 0.85);
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+}
+
+.hero-content {
+    max-width: 900px;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 48px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.hero-subtitle {
+    font-size: 24px;
+    color: #fbbf24;
+    margin-bottom: 40px;
+}
+
+.hero-description {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.hero-description p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.hero-description p:last-child {
+    margin-bottom: 0;
+}
+
+/* MISIÓN Y VISIÓN */
+.mission-vision {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.mission-card, .vision-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    border-left: 5px solid #fbbf24;
+}
+
+.mission-card h3, .vision-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #2563eb;
+}
+
+.mission-card p, .vision-card p {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #333;
+}
+
+/* PRODUCTOS */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.service-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    border-top: 4px solid #fbbf24;
+}
+
+.service-icon {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    font-size: 22px;
+    color: #2563eb;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.service-card p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.service-features {
+    list-style: none;
+    padding: 0;
+}
+
+.service-features li {
+    padding: 8px 0;
+    color: #333;
+    font-size: 15px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.service-features li:before {
+    content: '✓';
+    color: #22c55e;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+/* PIE DE PÁGINA */
+.footer {
+    background-color: #1e293b;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+    }
+    
+    .nav-menu {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .nav-link {
+        text-align: center;
+    }
+    
+    .hero-title {
+        font-size: 32px;
+    }
+    
+    .hero-subtitle {
+        font-size: 18px;
+    }
+
+    .mission-vision {
+        grid-template-columns: 1fr;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
